@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+{% load static %}
+{% load staticfiles %}
+{% block content %}
+<app-root></app-root>
+<script src="{% static 'front-end/polyfills.js'%}" type="text/javascript" charset="utf-8"></script>
+<script src="{% static 'front-end/vendor.js'%}" type="text/javascript" charset="utf-8"></script>
+<script src="{% static 'front-end/main.js'%}" type="text/javascript" charset="utf-8"></script>
+<script src="{% static 'front-end/runtime.js'%}" type="text/javascript" charset="utf-8"></script>
+<script src="{% static 'front-end/styles.js'%}" type="text/javascript" charset="utf-8"></script>
+{% endblock %}

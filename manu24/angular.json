@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "manu23": {
+    "manu24": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/manu23",
+            "outputPath": "dist/manu24",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "manu23:build"
+            "browserTarget": "manu24:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "manu23:build:production"
+              "browserTarget": "manu24:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "manu23:build"
+            "browserTarget": "manu24:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "manu23-e2e": {
+    "manu24-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "manu23:serve"
+            "devServerTarget": "manu24:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "manu23:serve:production"
+              "devServerTarget": "manu24:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "manu23"
+  "defaultProject": "manu24"
 }
